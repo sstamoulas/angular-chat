@@ -6,9 +6,9 @@ import { uuid } from './../util/uuid';
  */
  export class Thread {
    id: string;
-   lastMessage: Message;
-   name: string;
-   avatarSrc: string;
+   lastMessage?: Message;
+   name: string | undefined;
+   avatarSrc?: string;
 
    constructor(id?: string,
                name?: string,
@@ -18,4 +18,3 @@ import { uuid } from './../util/uuid';
      this.avatarSrc = avatarSrc;
    }
  }
- 
